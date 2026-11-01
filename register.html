@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Student Portal - Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Dynamic Student Portal</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="timetable.html">Timetable</a> | 
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Student Registration</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="course">Course of Study:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="se">Software Engineering</option>
+                </select>
+            </div>
+
+            <br>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+
+            <br>
+
+            <div>
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions
+                </label>
+            </div>
+
+            <br>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+
+        <hr>
+
+        <section>
+            <h3>Admission Requirements</h3>
+            <ul>
+                <li>High School Certificate or equivalent</li>
+                <li>National Identification Document or Passport</li>
+                <li>Two recent passport-sized photos</li>
+            </ul>
+
+            <h3>Registration Steps</h3>
+            <ol>
+                <li>Fill out and submit the registration form above.</li>
+                <li>Verify your email address via the link sent to you.</li>
+                <li>Upload required supporting admission documents.</li>
+                <li>Pay the registration fee to complete enrollment.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dynamic Student Portal</p>
+    </footer>
+</body>
+</html>
