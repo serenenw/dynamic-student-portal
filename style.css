@@ -1,52 +1,84 @@
-/* Base Font and Global Styles */
+/* Base Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f9;
     color: #333333;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
-/* Header & Navigation Styling */
+/* Header & Flexbox Navigation (Lab 6) */
 header {
     background-color: #1a2a3a;
     color: #ffffff;
     padding: 1rem 2rem;
 }
 
-header h1 {
-    margin-bottom: 0.5rem;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
 }
 
 nav a {
-    color: #00bcd4;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #00bcd4;
 }
 
-/* Main Container & Page Headings */
+/* CSS Grid Homepage Layout (Lab 6) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content, .sidebar {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* Form Container Styling */
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 2rem auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 
-h2, h3 {
-    color: #1a2a3a;
-    margin-bottom: 1rem;
-}
-
-/* Form Styling (Lab 5 Requirement) */
 form {
     background-color: #ffffff;
     padding: 2rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 form div {
@@ -65,20 +97,19 @@ input[type="date"],
 select {
     width: 100%;
     padding: 0.6rem;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
 fieldset {
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
     padding: 1rem;
 }
 
 button[type="submit"] {
     background-color: #28a745;
-    color: #ffffff;
+    color: white;
     border: none;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
@@ -106,7 +137,7 @@ th, td {
 
 th {
     background-color: #1a2a3a;
-    color: #ffffff;
+    color: white;
 }
 
 /* Footer Styling */
@@ -114,6 +145,17 @@ footer {
     text-align: center;
     padding: 1.5rem;
     background-color: #1a2a3a;
-    color: #ffffff;
+    color: white;
     margin-top: 2rem;
+}
+
+/* Mobile Responsive Viewport */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }

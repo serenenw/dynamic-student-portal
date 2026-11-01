@@ -1,35 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Student Portal</title>
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="styles.css">
-    
-    <!-- Lab 5 Internal Style Comparison -->
-    <style>
-        h2 {
-            color: blue;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>Dynamic Student Portal</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="timetable.html">Timetable</a> | 
-            <a href="register.html">Register</a>
-        </nav>
+        <div class="header-container">
+            <h1>Dynamic Student Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="timetable.html">Timetable</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Lab 5 Inline Style Comparison (Inline wins over internal 'blue' and external CSS) -->
-        <h2 style="color: red;">Welcome to the Portal</h2>
-        <p>Your one-stop center for managing courses, class timetables, and student registration.</p>
-        <img src="https://via.placeholder.com/600x200?text=Student+Portal+Banner" alt="Student Portal Banner">
+    <main class="grid-container">
+        <section class="main-content">
+            <h2>Welcome to the Portal</h2>
+            <p>Your one-stop center for managing courses, class timetables, and student registration.</p>
+            <img src="https://via.placeholder.com/600x200?text=Student+Portal+Banner" alt="Student Portal Banner" class="banner-img">
+        </section>
+
+        <aside class="sidebar">
+            <h3>Quick News & Announcements</h3>
+            <ul>
+                <li>Mid-semester examinations schedule released.</li>
+                <li>Registration deadline extended to Friday.</li>
+                <li>Library hours updated for exam period.</li>
+            </ul>
+        </aside>
     </main>
 
     <footer>
