@@ -1,0 +1,119 @@
+/* Base Font and Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation Styling */
+header {
+    background-color: #1a2a3a;
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container & Page Headings */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+h2, h3 {
+    color: #1a2a3a;
+    margin-bottom: 1rem;
+}
+
+/* Form Styling (Lab 5 Requirement) */
+form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    background-color: #1a2a3a;
+    color: #ffffff;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1a2a3a;
+    color: #ffffff;
+    margin-top: 2rem;
+}

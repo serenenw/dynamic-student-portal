@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Student Portal</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lab 5 Internal Style Comparison -->
+    <style>
+        h2 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,7 +26,8 @@
     </header>
 
     <main>
-        <h2>Welcome to the Portal</h2>
+        <!-- Lab 5 Inline Style Comparison (Inline wins over internal 'blue' and external CSS) -->
+        <h2 style="color: red;">Welcome to the Portal</h2>
         <p>Your one-stop center for managing courses, class timetables, and student registration.</p>
         <img src="https://via.placeholder.com/600x200?text=Student+Portal+Banner" alt="Student Portal Banner">
     </main>
